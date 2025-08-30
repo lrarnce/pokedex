@@ -4,28 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+
     <title>PokeDex</title>
 </head>
 <body>
 
-    <div class="navbar">
-        <input type="text" placeholder="Search for a pokemon" id="pokemonName">
-        <button onclick=fetchData()>Search</button>
-    </div>
+    
     
     <div class="mainContent">
-        <div class="container">
-            <img src="" alt="" id="pokemonSprite">
+
+        <img src="assets/pokedex-font.png" alt="National Pokedex" class="pokedexTitle">
+        
+        <div class="container" >
+            <form id="pokemonForm">
+            <div class="searchBar">
+                <input type="text" placeholder="Search for a pokemon" id="pokemonName">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </div>
+            </form>
+
+
+            <img src="assets/pokeball-loading-gif.gif" alt="" id="pokemonSprite">
             <p class="pId" id="pId"></p>
             <p class="pName" id="pName"></p>
+            <p class="pDescription" id="pDescription"></p>
             <div class="pokemonTypes">
-                
+                <!-- P Elements -->
             </div>
              
+            
         </div>
         
+      
+    <div class="footer">
+        <h4>by larcangeles</h4>
+    </div>
 
     </div>
+
     
 
 
