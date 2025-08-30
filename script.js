@@ -7,7 +7,7 @@ async function fetchData() {
     const pElementDescription = document.getElementById("pDescription");
 
     if (pokemonName == '') {
-        alert("Please type the name of the Pokemon.");
+        alert("Please enter the Pokémon name you want to search for.");
     }
 
     const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemonName}`);
